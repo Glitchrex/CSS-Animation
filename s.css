@@ -1,0 +1,43 @@
+.r1 {
+  width: 150px;
+  height: 150px;
+  border: solid black 0px;
+  z-index: -2px;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  background: linear-gradient(rgb(200, 0, 0), green);
+}
+.r3 {
+  width: 150px;
+  height: 150px;
+  border: solid black 0px;
+  z-index: 2px;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  background: linear-gradient(rgb(0, 0, 200), rgb(150, 90, 0));
+}
+.r2 {
+  width: 150px;
+  height: 150px;
+  border: solid black 0px;
+  position: absolute;
+  top: 50%;
+  background: linear-gradient(rgb(0, 200, 0), rgb(0, 0, 200));
+  animation: anim 5s linear infinite;
+}
+@keyframes anim {
+  0% {
+    right: 50%;
+  }
+  33.33% {
+    right: 0;
+  }
+  66.66% {
+    right: 90%;
+  }
+  100% {
+    right: 50%;
+  }
+}
